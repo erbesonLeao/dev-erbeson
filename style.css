@@ -1,0 +1,109 @@
+/* Define estilos globais para a página inteira */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Define a fonte padrão */
+  background-color: #0b0b0b; /* Cor de fundo escura */
+  color: #ffffff; /* Cor do texto */
+  text-align: center; /* Centraliza todo o conteúdo */
+}
+
+/* Estiliza o cabeçalho */
+header {
+  padding: 30px 20px;
+}
+
+/* Estiliza a imagem de perfil */
+#profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* Deixa a imagem redonda */
+  border: 2px solid #fff;
+  margin-bottom: 10px;
+}
+
+/* Nome do usuário */
+header h1 {
+  margin: 10px 0 5px;
+  font-size: 24px;
+}
+
+/* Descrição do usuário */
+header p {
+  font-size: 16px;
+  color: #aaa;
+}
+
+/* Estiliza a seção de links */
+#links {
+  display: flex;
+  flex-direction: column; /* Empilha os links verticalmente */
+  gap: 15px; /* Espaçamento entre os botões */
+  padding: 0 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Estiliza os botões (links) */
+#links a {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+/* Efeito hover ao passar o mouse */
+#links a:hover {
+  background-color: #333;
+}
+
+/* Estiliza o rodapé */
+footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Tema claro aplicado quando o body tem a classe .light-theme */
+body.light-theme {
+  background-color: #f1f1f1;
+  color: #121212;
+}
+
+/* Altera cor dos botões no tema claro */
+body.light-theme #links a {
+  background-color: #e0e0e0;
+  color: #121212;
+}
+
+body.light-theme #links a:hover {
+  background-color: #ccc;
+}
+
+/* Altera o rodapé no tema claro */
+body.light-theme footer {
+  color: #444;
+}
+
+/* Estilo do botão de troca de tema */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+  background-color: #555;
+}
+
